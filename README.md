@@ -83,3 +83,5 @@ If you created an application or package and would like other developers to cont
 Go the extra mile and write tests for your application. Then provide examples on how to run them here.
 
 ## Brainstorm
+
+This project is a revisit, I never completed the initial project

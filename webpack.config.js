@@ -23,8 +23,8 @@ module.exports = {
 
   devtool: "inline-source-map",
 
-  devserver: {
-    static: path.resolve(__dirname.dist),
+  devServer: {
+    static: path.resolve(__dirname, "dist"),
     hot: true,
     open: {
       app: {
