@@ -363,15 +363,37 @@ template {
 *,
 *::before,
 *::after {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   box-sizing: border-box;
 }
 
 /* || layout */
 
 body {
+  min-height: 100lvh;
   display: grid;
-  grid-template: 2, 3;
+  grid-template:
+    "head"
+    "main" 1fr
+    "foot";
+}
+
+header {
+  width: 100%;
+  height: 5rem;
+}
+
+main {
+  width: 100%;
+  display: grid;
+  grid-template:
+    "nav input" 15%
+    "nav display"
+    / 20% 1fr;
+}
+
+.left-nav {
+  grid-area: nav;
 }
 
 /* || components */

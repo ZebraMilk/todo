@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title><%= htmlWebpackPlugin.options.title %></title>
-    <script defer src="index.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
   </head>
   <body>
     <header></header>
@@ -21,16 +21,20 @@
       </nav>
       <form class="add-todo-fields">
         <div class="todo-input">
-          <label for=""></label><input type="text" />
+          <label class="input-label" for="title">Title</label>
+          <input id="title" type="text" name="todo-form" required />
         </div>
         <div class="todo-input">
-          <label for=""></label><input type="text" />
+          <label class="input-label" for="description">Description</label>
+          <input id="description" type="text" name="todo-form" />
         </div>
         <div class="todo-input">
-          <label for=""></label><input type="text" />
+          <label class="input-label" for="due-date">Due Date</label>
+          <input id="due-date" type="date" name="todo-form" />
         </div>
         <div class="todo-input">
-          <label for=""></label><input type="text" />
+          <label class="input-label" for="project">Project</label>
+          <input id="project" type="text" name="todo-form" />
         </div>
       </form>
       <div class="display"></div>
